@@ -44,5 +44,11 @@ export const ABOUT_PAGE_DATA = {
             usa: "+1 (346) 433-7572",
             email: "opmaskara1008@gmail.com / som83777@gmail.com"
         }
-    }
+    },
+    plantImages: [
+        { id: "1", image: "/assets/plant images/our-team-pic-1.jpg", alt: "Manufacturing Facility" },
+        { id: "2", image: "/assets/plant images/our-team-pic-2.jpg", alt: "Production Team" },
+        { id: "3", image: "/assets/plant images/our-team-pic-3.jpg", alt: "Factory Equipment" },
+        { id: "4", image: "/assets/plant images/our-team-pic-4.jpg", alt: "Factory" }
+    ]
 };
