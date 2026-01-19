@@ -46,19 +46,15 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                                 </h3>
                                 <div className="space-y-6">
                                     <div>
-                                        <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Registered Office</p>
+                                        <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Office Address</p>
                                         <p className="text-slate-600 text-sm leading-relaxed">
-                                            28 B, Shakespeare Sarani,<br />
-                                            10 B, Neelamber Building,<br />
-                                            Kolkata – 700017, India
+                                            28 B, Shakespeare Sarani, 10 B, Neelamber Building Kolkata - 700017, India
                                         </p>
                                     </div>
                                     <div>
-                                        <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Factory Unit</p>
+                                        <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Factory Address</p>
                                         <p className="text-slate-600 text-sm leading-relaxed">
-                                            Saraswati Complex, Bhandardaha,<br />
-                                            Domjur, Howrah – 711405<br />
-                                            West Bengal, India
+                                            Saraswati Complex, Bhandardaha, Domjur, Howrah 711405 (Near Srijon Industrial Park) West Bengal, India
                                         </p>
                                     </div>
                                 </div>
@@ -78,7 +74,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                                         </div>
                                     </div>
                                     <div>
-                                        <p className="text-xs font-bold text-blue-300 uppercase tracking-widest mb-1">USA Support</p>
+                                        <p className="text-xs font-bold text-blue-300 uppercase tracking-widest mb-1">USA Contact</p>
                                         <div className="flex items-center space-x-2">
                                             <Smartphone className="w-4 h-4 text-blue-300" />
                                             <span className="font-medium">+1 (346) 433-7572</span>
@@ -88,7 +84,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                                         <p className="text-xs font-bold text-blue-300 uppercase tracking-widest mb-1">Email Us</p>
                                         <div className="flex items-center space-x-2">
                                             <Mail className="w-4 h-4 text-blue-300" />
-                                            <span className="font-medium">opmaskara1008@gmail.com</span>
+                                            <span className="font-medium">opmaskara1008@gmail.com <br></br> som83777@gmail.com</span>
                                         </div>
                                     </div>
                                 </div>
@@ -109,7 +105,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                             <InquiryForm type="CONTACT" />
 
                             {/* Map Placeholder */}
-                            <div className="mt-8 bg-gray-200 rounded-3xl h-64 w-full relative overflow-hidden group">
+                            {/* <div className="mt-8 bg-gray-200 rounded-3xl h-64 w-full relative overflow-hidden group">
                                 <div className="absolute inset-0 flex items-center justify-center">
                                     <div className="text-center">
                                         <MapPin className="w-10 h-10 text-slate-400 mx-auto mb-2" />
@@ -118,7 +114,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                                     </div>
                                 </div>
                                 <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/5 transition-colors duration-300 cursor-pointer" />
-                            </div>
+                            </div> */}
                         </div>
 
                     </div>
