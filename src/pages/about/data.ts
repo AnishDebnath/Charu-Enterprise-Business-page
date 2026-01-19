@@ -5,16 +5,13 @@ export const ABOUT_PAGE_DATA = {
     additionalInfo: "A trusted name in the industry, we have been exhibiting at FENCETECH for over 30 years and have received prestigious awards from the Government of India.  Our 20,000 SQFT. factory facility features an in-house galvanizing plant, die & mold development, and testing lab, ensuring top-quality, innovative, and custom solutions for the global market.",
     credentials: {
         satisfaction: {
-            label: "100% Satisfaction",
-            desc: "Zero Defects Manufacturing Commitment"
+            image: "/assets/badge/Zero Defect.png"
         },
         years: {
-            label: "55 Years of Growth",
-            desc: "1969 – Present"
+            image: "/assets/badge/55 yers.png"
         },
         iso: {
-            label: "ISO 9001:2015 Certified",
-            desc: "International Quality Management Standards"
+            image: "/assets/badge/ISO-9001.png"
         }
     },
     certificates: [

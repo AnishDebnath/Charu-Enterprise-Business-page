@@ -74,7 +74,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                         <div className="relative">
                             <div className="aspect-square bg-slate-100 rounded-3xl overflow-hidden shadow-2xl">
                                 <img
-                                    src="https://images.unsplash.com/photo-1565608438257-fac3c27beb36?auto=format&fit=crop&q=80&w=800"
+                                    src="/assets/about-us.jpg"
                                     className="w-full h-full object-cover"
                                     alt="Industrial Precision"
                                     loading="lazy"
@@ -96,20 +96,24 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                     <div className="text-center mb-12">
                         <h3 className="text-xl font-bold text-slate-900 uppercase tracking-widest text-center">Our Commitment to Quality</h3>
                     </div>
-                    <div className="grid md:grid-cols-3 gap-8">
+                    <div className="flex justify-center items-center gap-8 md:gap-12 flex-wrap">
                         {[
-                            { label: ABOUT_PAGE_DATA.credentials.satisfaction.label, desc: ABOUT_PAGE_DATA.credentials.satisfaction.desc, icon: <Zap className="w-6 h-6" /> },
-                            { label: ABOUT_PAGE_DATA.credentials.years.label, desc: ABOUT_PAGE_DATA.credentials.years.desc, icon: <Clock className="w-6 h-6" /> },
-                            { label: ABOUT_PAGE_DATA.credentials.iso.label, desc: ABOUT_PAGE_DATA.credentials.iso.desc, icon: <Award className="w-6 h-6" /> }
+                            { image: ABOUT_PAGE_DATA.credentials.satisfaction.image },
+                            { image: ABOUT_PAGE_DATA.credentials.years.image },
+                            { image: ABOUT_PAGE_DATA.credentials.iso.image }
                         ].map((badge, i) => (
-                            <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex items-center space-x-6 hover:shadow-md transition-shadow">
-                                <div className="w-14 h-14 bg-blue-900 text-white rounded-xl flex items-center justify-center shrink-0">
-                                    {badge.icon}
-                                </div>
-                                <div>
-                                    <h4 className="font-bold text-slate-900">{badge.label}</h4>
-                                    <p className="text-sm text-slate-500">{badge.desc}</p>
-                                </div>
+                            <div key={i} className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow p-6">
+                                {badge.image && (
+                                    <div className="bg-gray-50 w-40 h-40 rounded-2xl flex items-center justify-center overflow-hidden">
+                                        <img
+                                            src={badge.image}
+                                            alt="Badge"
+                                            className="w-4/5 h-4/5 object-contain"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                )}
                             </div>
                         ))}
                     </div>
