@@ -1,6 +1,6 @@
 import zeroDefect from '@/assets/badge/zero-defect.png';
-import fiftyFiveYears from '@/assets/badge/55-years.png';
-import iso9001 from '@/assets/badge/iso-9001.png';
+import Year from '@/assets/badge/year.png';
+import iso from '@/assets/badge/iso.png';
 import certISO from '@/assets/certificate & awards/ISO.jpg';
 import certAward from '@/assets/certificate & awards/Award.jpg';
 import certGST from '@/assets/certificate & awards/GST.jpg';
@@ -22,10 +22,10 @@ export const ABOUT_PAGE_DATA = {
             image: zeroDefect
         },
         years: {
-            image: fiftyFiveYears
+            image: Year
         },
         iso: {
-            image: iso9001
+            image: iso
         }
     },
     certificates: [
