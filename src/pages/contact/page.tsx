@@ -13,9 +13,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
             {/* Hero Section */}
             <section className="industrial-gradient py-20 text-white relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
-                    <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    {/* <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                         <path d="M0 0 L100 100 M100 0 L0 100" stroke="white" strokeWidth="0.1" fill="none" />
-                    </svg>
+                    </svg> */}
                 </div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <button

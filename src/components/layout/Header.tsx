@@ -40,12 +40,18 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentView }) => {
 
                     <div className="hidden md:flex items-center space-x-8">
                         <button
+                            onClick={() => handleNav('home')}
+                            className={`font-medium transition-colors ${currentView === 'home' ? 'text-blue-900 font-bold' : 'text-slate-600 hover:text-blue-900'}`}
+                        >
+                            Home
+                        </button>
+                        <button
                             onClick={() => handleNav('about')}
                             className={`font-medium transition-colors ${currentView === 'about' ? 'text-blue-900 font-bold' : 'text-slate-600 hover:text-blue-900'}`}
                         >
                             About Us
                         </button>
-                        <div className="flex items-center space-x-4 border-l pl-8 border-gray-200">
+                        <div className="flex items-center space-x-4 border-l-2 pl-8 border-slate-300">
                             <button
                                 onClick={() => handleNav('contact')}
                                 className={`bg-blue-900 text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-blue-800 transition-all shadow-lg hover:shadow-blue-200 flex items-center ${currentView === 'contact' ? 'bg-blue-800 ring-2 ring-offset-2 ring-blue-900' : ''}`}

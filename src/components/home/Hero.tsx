@@ -23,7 +23,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, onAboutClick }) => {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    <div className="space-y-8">
+                    <div className="space-y-8 order-1 lg:order-1">
                         <div className="inline-flex items-center space-x-2 bg-blue-800/40 backdrop-blur-sm border border-blue-400/30 px-4 py-2 rounded-full">
                             <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
                             <span className="text-blue-100 text-xs font-bold uppercase tracking-widest">Global Export Partner Since 1969</span>
@@ -67,14 +67,17 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, onAboutClick }) => {
                         </div>
                     </div>
 
-                    <div className="relative hidden lg:block">
+                    <div className="relative order-2 lg:order-2">
                         <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-                            <img
-                                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800"
-                                alt="Manufacturing Excellence"
+                            <video
+                                width="100%"
+                                height="auto"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
                                 className="w-full h-auto"
-                                loading="lazy"
-                                decoding="async"
+                                src="/assets/banner video.mp4"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent" />
                             <div className="absolute bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
