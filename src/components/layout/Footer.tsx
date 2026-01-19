@@ -1,7 +1,7 @@
 import React from 'react';
 import { Linkedin, Facebook, Twitter } from 'lucide-react';
 import { BRAND_NAME, COMPANY_DESCRIPTION } from '../../data/constants';
-import logoBlue from '../../../assets/logo/charu logo blue.png';
+import logoBlue from '/assets/logo/charu logo blue.png';
 
 interface FooterProps {
     onNavigate: (view: 'home' | 'about' | 'contact') => void;

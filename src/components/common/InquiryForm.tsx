@@ -112,7 +112,7 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({ type }) => {
                         ) : (
                             <>
                                 <Send className="w-5 h-5" />
-                                <span>{type === 'CATALOGUE' ? 'Download Catalogue Now' : 'Send Inquiry'}</span>
+                                <span>{type === 'CATALOGUE' ? 'Connect Now' : 'Send Inquiry'}</span>
                             </>
                         )}
                     </button>

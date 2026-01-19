@@ -29,10 +29,6 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ onContactClick }) => {
                             <p className="font-bold text-lg leading-relaxed">{item}</p>
                         </div>
                     ))}
-                    <div className="bg-blue-400 p-8 rounded-2xl flex flex-col justify-between group cursor-pointer" onClick={onContactClick}>
-                        <h3 className="text-blue-900 text-2xl font-black uppercase italic leading-none">Global Partnership Ready</h3>
-                        <p className="text-blue-900/80 font-bold mt-4">Connect with our export division today for bulk inquiries.</p>
-                    </div>
                 </div>
             </div>
         </section>

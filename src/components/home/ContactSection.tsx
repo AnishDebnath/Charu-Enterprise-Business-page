@@ -26,7 +26,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ currentOption })
                         </div>
 
                         <div className="space-y-6">
-                            {[CONTACT_INFO.headquarters, CONTACT_INFO.exportSales, CONTACT_INFO.phone].map((info, idx) => {
+                            {[CONTACT_INFO.office, CONTACT_INFO.factory, CONTACT_INFO.exportSales, CONTACT_INFO.phone].map((info, idx) => {
                                 const IconComponent = ICON_MAP[info.icon as keyof typeof ICON_MAP];
                                 return (
                                     <div key={idx} className="flex items-start space-x-4">
