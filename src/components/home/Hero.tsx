@@ -1,5 +1,6 @@
 import React from 'react';
 import { Download, ChevronRight, CheckCircle2 } from 'lucide-react';
+import bannerVideo from '/assets/banner video.mp4';
 
 interface HeroProps {
     onCtaClick: () => void;
@@ -77,7 +78,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, onAboutClick }) => {
                                 loop
                                 playsInline
                                 className="w-full h-auto"
-                                src="/assets/banner video.mp4"
+                                src={bannerVideo}
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent" />
                             <div className="absolute bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">

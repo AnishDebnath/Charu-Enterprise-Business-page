@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { User, ShieldCheck, Clock, Award, MapPin, Phone, Mail, Globe, ArrowLeft, Heart, Zap, FileCheck, X } from 'lucide-react';
 import { ABOUT_PAGE_DATA } from './data';
+import aboutUsImage from '/assets/about-us.jpg';
 
 interface AboutPageProps {
     onBack: () => void;
@@ -69,7 +70,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                         <div className="relative">
                             <div className="aspect-square bg-slate-100 rounded-3xl overflow-hidden shadow-2xl">
                                 <img
-                                    src="/assets/about-us.jpg"
+                                    src={aboutUsImage}
                                     className="w-full h-full object-cover"
                                     alt="Industrial Precision"
                                     loading="lazy"
