@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { BRAND_NAME } from '../../data/constants';
 import { View } from '../../../types';
-import logoWhite from '/assets/logo/charu logo white.png';
+import logoWhite from '../../../assets/logo/charu logo white.png';
 
 interface HeaderProps {
     onNavigate: (view: View) => void;

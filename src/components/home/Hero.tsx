@@ -1,6 +1,6 @@
 import React from 'react';
 import { Download, ChevronRight, CheckCircle2 } from 'lucide-react';
-import bannerVideo from '/assets/banner video.mp4';
+import bannerVideo from '../../../assets/banner video.mp4';
 
 interface HeroProps {
     onCtaClick: () => void;

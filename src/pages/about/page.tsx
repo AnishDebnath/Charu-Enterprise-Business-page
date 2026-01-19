@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { User, ShieldCheck, Clock, Award, MapPin, Phone, Mail, Globe, ArrowLeft, Heart, Zap, FileCheck, X } from 'lucide-react';
 import { ABOUT_PAGE_DATA } from './data';
-import aboutUsImage from '/assets/about-us.jpg';
+import aboutUsImage from '../../../assets/about-us.jpg';
 
 interface AboutPageProps {
     onBack: () => void;
