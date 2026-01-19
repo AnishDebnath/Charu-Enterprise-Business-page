@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { BRAND_NAME } from '../../data/constants';
 import { View } from '../../../types';
+import logoWhite from '../../../assets/logo/charu logo white.png';
 
 interface HeaderProps {
     onNavigate: (view: View) => void;
@@ -26,7 +27,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentView }) => {
                     >
                         {/* Custom Logo based on provided asset */}
                         <div className="w-14 h-14 bg-blue-900 rounded-lg flex flex-col items-center justify-center p-1 shadow-md hover:shadow-lg transition-all">
-                            <img src="/assets/logo/charu logo white.png" alt="" />
+                            <img src={logoWhite} alt="charu logo" className="w-full h-full object-contain" />
                         </div>
 
                         <div>

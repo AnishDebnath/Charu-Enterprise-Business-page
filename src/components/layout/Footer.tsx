@@ -1,6 +1,7 @@
 import React from 'react';
 import { Linkedin, Facebook, Twitter } from 'lucide-react';
 import { BRAND_NAME, COMPANY_DESCRIPTION } from '../../data/constants';
+import logoBlue from '../../../assets/logo/charu logo blue.png';
 
 interface FooterProps {
     onNavigate: (view: 'home' | 'about' | 'contact') => void;
@@ -17,7 +18,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     >
                         {/* Footer Logo - Inverted for dark background */}
                         <div className="w-12 h-12 bg-white rounded-lg flex flex-col items-center justify-center p-1 shadow-lg shadow-white/5">
-                            <img src="/assets/logo/charu logo blue.png" alt="charu logo" />
+                            <img src={logoBlue} alt="charu logo" className="w-full h-full object-contain" />
                         </div>
                         <h1 className="text-2xl font-black tracking-tight uppercase text-white">{BRAND_NAME.split(' – ')[0]}</h1>
                     </div>
