@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, MapPin, Phone, ArrowLeft, Clock, Globe, Building2, Smartphone } from 'lucide-react';
 import { InquiryForm } from '../../components/common/InquiryForm';
+import { CONTACT_PAGE_INFO } from './data';
 
 interface ContactPageProps {
     onBack: () => void;
@@ -46,15 +47,15 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                                 </h3>
                                 <div className="space-y-6">
                                     <div>
-                                        <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Office Address</p>
+                                        <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Registered Office</p>
                                         <p className="text-slate-600 text-sm leading-relaxed">
-                                            28 B, Shakespeare Sarani, 10 B, Neelamber Building Kolkata - 700017, India
+                                            {CONTACT_PAGE_INFO.headquarters.office}
                                         </p>
                                     </div>
                                     <div>
-                                        <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Factory Address</p>
+                                        <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Factory Unit</p>
                                         <p className="text-slate-600 text-sm leading-relaxed">
-                                            Saraswati Complex, Bhandardaha, Domjur, Howrah 711405 (Near Srijon Industrial Park) West Bengal, India
+                                            {CONTACT_PAGE_INFO.headquarters.factory}
                                         </p>
                                     </div>
                                 </div>
@@ -70,21 +71,21 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                                         <p className="text-xs font-bold text-blue-300 uppercase tracking-widest mb-1">India Contact</p>
                                         <div className="flex items-center space-x-2">
                                             <Phone className="w-4 h-4 text-blue-300" />
-                                            <span className="font-medium">+91 9830083777</span>
+                                            <span className="font-medium">{CONTACT_PAGE_INFO.phone.india}</span>
                                         </div>
                                     </div>
                                     <div>
-                                        <p className="text-xs font-bold text-blue-300 uppercase tracking-widest mb-1">USA Contact</p>
+                                        <p className="text-xs font-bold text-blue-300 uppercase tracking-widest mb-1">USA Support</p>
                                         <div className="flex items-center space-x-2">
                                             <Smartphone className="w-4 h-4 text-blue-300" />
-                                            <span className="font-medium">+1 (346) 433-7572</span>
+                                            <span className="font-medium">{CONTACT_PAGE_INFO.phone.usa}</span>
                                         </div>
                                     </div>
                                     <div className="pt-4 border-t border-blue-800">
                                         <p className="text-xs font-bold text-blue-300 uppercase tracking-widest mb-1">Email Us</p>
                                         <div className="flex items-center space-x-2">
                                             <Mail className="w-4 h-4 text-blue-300" />
-                                            <span className="font-medium">opmaskara1008@gmail.com <br></br> som83777@gmail.com</span>
+                                            <span className="font-medium">{CONTACT_PAGE_INFO.phone.email}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -94,8 +95,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                                 <Clock className="w-6 h-6 text-blue-600 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-slate-900">Business Hours</h4>
-                                    <p className="text-sm text-slate-500 mt-1">Monday – Saturday</p>
-                                    <p className="text-sm text-slate-900 font-medium">09:00 AM – 06:00 PM (IST)</p>
+                                    <p className="text-sm text-slate-500 mt-1">{CONTACT_PAGE_INFO.businessHours.days}</p>
+                                    <p className="text-sm text-slate-900 font-medium">{CONTACT_PAGE_INFO.businessHours.time}</p>
                                 </div>
                             </div>
                         </div>

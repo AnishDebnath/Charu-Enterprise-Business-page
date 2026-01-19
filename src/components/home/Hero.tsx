@@ -8,7 +8,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onCtaClick, onAboutClick }) => {
     const handleDownload = () => {
-        window.open('https://drive.google.com', '_blank');
+        window.open('https://drive.google.com/drive/folders/1B-Wc2ATVeDuj1ZZAhDpOYWIJ6JuBC4Rc?usp=sharing', '_blank');
     };
 
     return (
@@ -73,6 +73,8 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, onAboutClick }) => {
                                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800"
                                 alt="Manufacturing Excellence"
                                 className="w-full h-auto"
+                                loading="lazy"
+                                decoding="async"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent" />
                             <div className="absolute bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
