@@ -59,7 +59,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, onAboutClick }) => {
                         </div>
 
                         <div className="flex flex-wrap gap-6 pt-4">
-                            {["ISO 9001:2015", "Govt Recognized", "Global Delivery"].map((tag) => (
+                            {["Govt Recognized", "Global Delivery"].map((tag) => (
                                 <div key={tag} className="flex items-center text-blue-200 text-sm font-medium">
                                     <CheckCircle2 className="w-4 h-4 mr-2 text-blue-400" />
                                     {tag}
@@ -81,7 +81,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, onAboutClick }) => {
                                 src={bannerVideo}
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent" />
-                            <div className="absolute bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
+                            {/* <div className="absolute bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
                                 <div className="flex items-center justify-between">
                                     <div>
                                         <p className="text-white font-bold text-lg">150 Million+</p>
@@ -93,7 +93,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, onAboutClick }) => {
                                         <p className="text-blue-200 text-xs">Serving Globally</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         {/* Decorative elements */}
                         <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-500/20 blur-3xl rounded-full" />

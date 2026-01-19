@@ -1,16 +1,16 @@
-import zeroDefect from '../../../assets/badge/Zero Defect.png';
-import fivetyYears from '../../../assets/badge/55 yers.png';
-import iso9001 from '../../../assets/badge/ISO-9001.png';
-import certISO from '../../../assets/certificate & awards/ISO.jpg';
-import certAward from '../../../assets/certificate & awards/Award.jpg';
-import certGST from '../../../assets/certificate & awards/GST.jpg';
-import certMSME from '../../../assets/certificate & awards/MSME.jpg';
-import founderOP from '../../../assets/founders/Mr.-OP-Maskara.jpg';
-import founderSom from '../../../assets/founders/Mr.-Som-Maskara.jpg';
-import plantPic1 from '../../../assets/plant images/our-team-pic-1.jpg';
-import plantPic2 from '../../../assets/plant images/our-team-pic-2.jpg';
-import plantPic3 from '../../../assets/plant images/our-team-pic-3.jpg';
-import plantPic4 from '../../../assets/plant images/our-team-pic-4.jpg';
+import zeroDefect from '@/assets/badge/zero-defect.png';
+import fiftyFiveYears from '@/assets/badge/55-years.png';
+import iso9001 from '@/assets/badge/iso-9001.png';
+import certISO from '@/assets/certificate & awards/ISO.jpg';
+import certAward from '@/assets/certificate & awards/Award.jpg';
+import certGST from '@/assets/certificate & awards/GST.jpg';
+import certMSME from '@/assets/certificate & awards/MSME.jpg';
+import founderOP from '@/assets/founders/Mr.-OP-Maskara.jpg';
+import founderSom from '@/assets/founders/Mr.-Som-Maskara.jpg';
+import plantPic1 from '@/assets/plant images/our-team-pic-1.jpg';
+import plantPic2 from '@/assets/plant images/our-team-pic-2.jpg';
+import plantPic3 from '@/assets/plant images/our-team-pic-3.jpg';
+import plantPic4 from '@/assets/plant images/our-team-pic-4.jpg';
 
 export const ABOUT_PAGE_DATA = {
     legacy: "Our Legacy",
@@ -22,7 +22,7 @@ export const ABOUT_PAGE_DATA = {
             image: zeroDefect
         },
         years: {
-            image: fivetyYears
+            image: fiftyFiveYears
         },
         iso: {
             image: iso9001

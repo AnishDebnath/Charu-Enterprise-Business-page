@@ -11,7 +11,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
     return (
         <div className="bg-white min-h-screen pt-20 animate-in fade-in duration-500">
             {/* Hero Section */}
-            <section className="industrial-gradient py-20 text-white relative overflow-hidden">
+            <section className="industrial-gradient py-10 text-white relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     {/* <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                         <path d="M0 0 L100 100 M100 0 L0 100" stroke="white" strokeWidth="0.1" fill="none" />

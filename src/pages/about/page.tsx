@@ -29,7 +29,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
     return (
         <div className="bg-white min-h-screen pt-20 animate-in fade-in duration-500">
             {/* Hero Section */}
-            <section className="industrial-gradient py-24 text-white relative overflow-hidden">
+            <section className="industrial-gradient py-10 text-white relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <button
                         onClick={onBack}
@@ -116,6 +116,44 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                 </div>
             </section>
 
+            {/* Founders Section */}
+            <section className="py-24 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-20">
+                        <span className="text-blue-600 font-bold uppercase tracking-widest text-xs">Visionary Leadership</span>
+                        <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mt-4">Our Founders</h2>
+                    </div>
+
+                    <div className="space-y-24">
+                        {ABOUT_PAGE_DATA.founders.map((founder, index) => (
+                            <div key={founder.id} className={`flex flex-col lg:flex-row items-center gap-12 ${index === 0 ? '' : 'lg:flex-row-reverse'}`}>
+                                <div className="lg:w-2/3 order-2 lg:order-1">
+                                    <h3 className="text-2xl font-black text-blue-900 mb-1">{founder.name}</h3>
+                                    <p className="text-blue-600 font-bold uppercase tracking-widest text-xs mb-6">{founder.role}</p>
+                                    <div className="space-y-4 text-slate-600 leading-relaxed text-lg">
+                                        <p>
+                                            {founder.bio}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="lg:w-1/3 order-1 lg:order-2 flex justify-center">
+                                    <div className="w-70 aspect-[4/5] bg-slate-100 rounded-3xl overflow-hidden shadow-2xl relative">
+                                        <img
+                                            src={founder.image}
+                                            className="w-full h-full object-cover"
+                                            alt={founder.name}
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                        <div className="absolute inset-0 border-[16px] border-white/10 m-6 rounded-2xl pointer-events-none" />
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* Certificates Section */}
             <section className="py-24 bg-white border-b border-gray-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -155,44 +193,6 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                 </div>
             </section>
 
-            {/* Founders Section */}
-            <section className="py-24 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-20">
-                        <span className="text-blue-600 font-bold uppercase tracking-widest text-xs">Visionary Leadership</span>
-                        <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mt-4">Our Founders</h2>
-                    </div>
-
-                    <div className="space-y-24">
-                        {ABOUT_PAGE_DATA.founders.map((founder, index) => (
-                            <div key={founder.id} className={`flex flex-col lg:flex-row items-center gap-12 ${index === 0 ? '' : 'lg:flex-row-reverse'}`}>
-                                <div className="lg:w-2/3 order-2 lg:order-1">
-                                    <h3 className="text-2xl font-black text-blue-900 mb-1">{founder.name}</h3>
-                                    <p className="text-blue-600 font-bold uppercase tracking-widest text-xs mb-6">{founder.role}</p>
-                                    <div className="space-y-4 text-slate-600 leading-relaxed text-lg">
-                                        <p>
-                                            {founder.bio}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="lg:w-1/3 order-1 lg:order-2 flex justify-center">
-                                    <div className="w-70 aspect-[4/5] bg-slate-100 rounded-3xl overflow-hidden shadow-2xl relative">
-                                        <img
-                                            src={founder.image}
-                                            className="w-full h-full object-cover"
-                                            alt={founder.name}
-                                            loading="lazy"
-                                            decoding="async"
-                                        />
-                                        <div className="absolute inset-0 border-[16px] border-white/10 m-6 rounded-2xl pointer-events-none" />
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* Our Plant & Team Section */}
             <section className="py-24 bg-gradient-to-b from-slate-50 to-white border-b border-gray-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -204,29 +204,27 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         {ABOUT_PAGE_DATA.plantImages.map((item, index) => (
-                            <div key={item.id} className="group relative bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-shadow cursor-pointer">
-                                <div className="aspect-[4/5] bg-slate-100 overflow-hidden relative">
-                                    <img
-                                        src={item.image}
-                                        alt={item.alt}
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                                        loading="lazy"
-                                        decoding="async"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                        <p className="text-white font-semibold px-4 py-4 w-full text-sm">{item.alt}</p>
-                                    </div>
+                            <div key={item.id} className="relative h-auto lg:h-80 bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-shadow cursor-pointer group">
+                                <img
+                                    src={item.image}
+                                    alt={item.alt}
+                                    className="w-full h-auto lg:h-full lg:object-cover group-hover:scale-105 transition-transform duration-300"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                    <p className="text-white font-semibold px-4 py-4 w-full text-sm">{item.alt}</p>
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Company Details Section */}
-            <section className="py-16 md:py-24 bg-slate-50">
+            < section className="py-16 md:py-24 bg-slate-50" >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12 md:mb-16">
                         <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900">Company Information</h2>
@@ -274,36 +272,38 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Fullscreen Image Modal */}
-            {selectedImage && (
-                <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 overflow-y-auto animate-in fade-in duration-200" onClick={() => setSelectedImage(null)}>
-                    <div className="relative max-w-4xl my-auto" onClick={(e) => e.stopPropagation()}>
-                        <button
-                            onClick={() => setSelectedImage(null)}
-                            className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-50"
-                        >
-                            <X className="w-8 h-8" />
-                        </button>
-                        <div className="bg-white rounded-lg overflow-hidden">
-                            {selectedImage.image && (
-                                <img
-                                    src={selectedImage.image}
-                                    alt={selectedImage.title}
-                                    className="w-full h-full object-contain"
-                                    loading="eager"
-                                    decoding="sync"
-                                />
-                            )}
-                            <div className="p-6 bg-slate-50 border-t border-gray-200">
-                                <h3 className="text-xl font-bold text-slate-900">{selectedImage.title}</h3>
-                                <p className="text-slate-600 mt-2">{selectedImage.subtitle}</p>
+            {
+                selectedImage && (
+                    <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 overflow-y-auto animate-in fade-in duration-200" onClick={() => setSelectedImage(null)}>
+                        <div className="relative max-w-4xl my-auto" onClick={(e) => e.stopPropagation()}>
+                            <button
+                                onClick={() => setSelectedImage(null)}
+                                className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-50"
+                            >
+                                <X className="w-8 h-8" />
+                            </button>
+                            <div className="bg-white rounded-lg overflow-hidden">
+                                {selectedImage.image && (
+                                    <img
+                                        src={selectedImage.image}
+                                        alt={selectedImage.title}
+                                        className="w-full h-full object-contain"
+                                        loading="eager"
+                                        decoding="sync"
+                                    />
+                                )}
+                                <div className="p-6 bg-slate-50 border-t border-gray-200">
+                                    <h3 className="text-xl font-bold text-slate-900">{selectedImage.title}</h3>
+                                    <p className="text-slate-600 mt-2">{selectedImage.subtitle}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            )}
-        </div>
+                )
+            }
+        </div >
     );
 };
